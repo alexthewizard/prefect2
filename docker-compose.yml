@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  agent:
+    environment:
+      - PREFECT_API_URL=http://host.docker.internal:4200/api
+    build:
+      dockerfile: Dockerfile
+
