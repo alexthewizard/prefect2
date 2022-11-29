@@ -1,3 +1,5 @@
+import os
+
 from prefect import flow, task
 import prefect
 
@@ -11,4 +13,4 @@ def say_something(a: str):
 
 @flow
 def print_flow():
-    say_something("G'day Alex!")
+    say_something(os.getenv(["STAGPROD"]))
