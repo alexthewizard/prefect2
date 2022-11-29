@@ -13,4 +13,4 @@ def say_something(a: str):
 
 @flow
 def print_flow():
-    say_something(os.getenv(["STAGPROD"]))
+    say_something(os.getenv("STAGPROD"))

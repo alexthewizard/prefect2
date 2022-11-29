@@ -8,7 +8,7 @@ deployment = Deployment.build_from_flow(
     flow=print_flow,
     name="print-simple",
     work_queue_name="default",
-    storage=github_block
+    infra_overrides={"env.STAGPROD": "staging"}
 )
 
 deployment.apply()
