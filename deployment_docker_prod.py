@@ -8,7 +8,7 @@ docker_container_block = DockerContainer.load("alex-docker")
 
 deployment = Deployment.build_from_flow(
     flow=print_flow,
-    name="print-simple-docker",
+    name="print-simple-docker-prod",
     work_queue_name="default",
     storage=github_block,
     infrastructure=docker_container_block,
