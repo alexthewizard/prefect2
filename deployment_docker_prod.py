@@ -7,11 +7,7 @@ github_block = GitHub(
     repository="https://github.com/alexthewizard/prefect2.git",
 )
 github_block.save('alex-repo', overwrite=True)
-docker_container_block = DockerContainer(
-    env={
-        "PREFECT_API_URL": "http://host.docker.internal:4200/api"
-    }
-)
+docker_container_block = DockerContainer()
 
 deployment = Deployment.build_from_flow(
     flow=print_flow,
