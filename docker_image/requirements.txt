@@ -1,0 +1,15 @@
+prefect-utils~=3.1.0
+landtech-config~=1.1.0
+landtech-gdal-utils~=1.4.0
+database-utils~=1.5.0
+landtech-utils~=2.0.3
+
+slackclient
+sqlalchemy-redshift~=0.8.9
+dbt-redshift~=1.1.0
+dbt-postgres~=1.1.0
+dbfread==2.0.7
+pandas~=1.4.3
+datacompy~=0.7.3
+watchdog==2.1.9
+awswrangler~=2.16.1
