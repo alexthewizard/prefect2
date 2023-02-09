@@ -2,7 +2,6 @@ import os
 
 from prefect import flow, task
 import prefect
-import pandas
 
 
 @task(name="Load", retries=3, retry_delay_seconds=30)
